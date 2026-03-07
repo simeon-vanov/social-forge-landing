@@ -3,18 +3,13 @@
 ## Project Description
 Marketing landing page for SocialAgent — an AI-powered X (Twitter) automation agent for @simo_vanov / DecodeTheTrade. This page showcases the product features, architecture, and value proposition to potential users and collaborators.
 
-## Linear MCP Source of Truth (MANDATORY)
-- Use Linear MCP with the **X.SocialAgent** Linear project as the **primary source** for backlog and issue tracking.
-- When understanding requirements, product features, or brand messaging, check X.SocialAgent docs in Linear first.
-- The project has three key documents: **Project Overview**, **SDD**, and **Risk Register**.
-
-### Linear Traceability Rule ⚠️ CRITICAL
-**Every piece of work MUST be linked to a Linear issue.** Before starting any implementation, bug fix, or design change:
-
-1. **Search Linear first** — Use Linear MCP to search the X.SocialAgent project for an existing issue.
-2. **If an issue exists** — Reference it, update its status, and proceed.
-3. **If NO issue exists** — Create a new Linear issue in the X.SocialAgent project.
-4. **On completion** — Update the Linear issue with a summary of changes.
+## Documentation Source of Truth
+- All project documentation lives in the **../social-agent-app/Docs/** folder.
+- Key documents:
+  - **Software Requirements** — Functional/non-functional requirements, backlog items, acceptance criteria
+  - **Software Design Document** — Architecture, data model, worker flows, UX design, ADRs
+  - **Risk Register** — Risk assessment and mitigation strategies
+- When understanding requirements, product features, or brand messaging, check the Docs/ folder first.
 
 ## Autonomy & Workflow Rules ⚠️ CRITICAL
 
