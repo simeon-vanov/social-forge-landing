@@ -1,10 +1,10 @@
-# Project: SocialAgent Landing Page
+# Project: SocialForge Landing Page
 
 ## Project Description
-Marketing landing page for SocialAgent — an AI-powered X (Twitter) automation agent for @simo_vanov / DecodeTheTrade. This page showcases the product features, architecture, and value proposition to potential users and collaborators.
+Marketing landing page for SocialForge — an AI-powered X (Twitter) automation agent for @simo_vanov / DecodeTheTrade. This page showcases the product features, architecture, and value proposition to potential users and collaborators.
 
 ## Documentation Source of Truth
-- All project documentation lives in the **../social-agent-app/Docs/** folder.
+- All project documentation lives in the **../social-forge-app/Docs/** folder.
 - Key documents:
   - **Software Requirements** — Functional/non-functional requirements, backlog items, acceptance criteria
   - **Software Design Document** — Architecture, data model, worker flows, UX design, ADRs
@@ -34,7 +34,7 @@ Marketing landing page for SocialAgent — an AI-powered X (Twitter) automation 
 
 ## Project Structure
 ```
-social-agent-landing/
+social-forge-landing/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx           # Root layout

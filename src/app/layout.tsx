@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SocialAgent — Your AI Social Media Growth Engine",
+  title: "SocialForge — Your AI Social Media Growth Engine",
   description:
-    "Stop burning out on social media. SocialAgent is an AI-powered desktop agent that creates on-brand posts, replies to your feed, and grows your audience — all on autopilot.",
+    "Stop burning out on social media. SocialForge is an AI-powered desktop agent that creates on-brand posts, replies to your feed, and grows your audience — all on autopilot.",
 };
 
 export default function RootLayout({

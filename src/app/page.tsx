@@ -5,7 +5,7 @@ export default function Home() {
       <nav className="fixed top-0 z-50 w-full border-b border-[var(--card-border)] bg-[var(--background)]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <span className="text-xl font-bold tracking-tight">
-            Social<span className="gradient-text">Agent</span>
+            Social<span className="gradient-text">Forge</span>
           </span>
           <div className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
             <a href="#features" className="hover:text-white transition-colors">Features</a>
@@ -39,7 +39,7 @@ export default function Home() {
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[var(--muted)] md:text-xl">
             63% of creators burned out last year. Not because they lacked talent — because growing on social media
-            is a full-time job. SocialAgent is your AI-powered desktop agent that creates posts,
+            is a full-time job. SocialForge is your AI-powered desktop agent that creates posts,
             replies to your feed, and grows your X/Twitter audience on autopilot.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -149,7 +149,7 @@ export default function Home() {
             Your personal <span className="gradient-text">growth engine</span>
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-center text-[var(--muted)] text-lg">
-            SocialAgent runs on your desktop, uses your browser session, and speaks in your voice.
+            SocialForge runs on your desktop, uses your browser session, and speaks in your voice.
             No API keys. No monthly fees. No generic AI slop.
           </p>
           <div className="grid gap-6 md:grid-cols-2">
@@ -227,7 +227,7 @@ export default function Home() {
               {
                 step: "01",
                 title: "Install & authenticate",
-                desc: "Download the desktop app, open it, and log in to X.com through the built-in browser. SocialAgent uses your existing session — no API keys or tokens needed.",
+                desc: "Download the desktop app, open it, and log in to X.com through the built-in browser. SocialForge uses your existing session — no API keys or tokens needed.",
               },
               {
                 step: "02",
@@ -237,7 +237,7 @@ export default function Home() {
               {
                 step: "03",
                 title: "Let the agent work",
-                desc: "SocialAgent monitors your feed, triages relevant posts, generates on-brand replies, and publishes your scheduled content. Watch it all happen in real-time from the dashboard, or just let it run.",
+                desc: "SocialForge monitors your feed, triages relevant posts, generates on-brand replies, and publishes your scheduled content. Watch it all happen in real-time from the dashboard, or just let it run.",
               },
             ].map((step) => (
               <div key={step.step} className="flex gap-6">
@@ -271,7 +271,7 @@ export default function Home() {
                 <tr className="border-b border-[var(--card-border)] bg-[var(--card)]">
                   <th className="px-6 py-4 font-medium text-[var(--muted)]">Feature</th>
                   <th className="px-6 py-4 font-medium text-[var(--muted)]">Scheduling Tools</th>
-                  <th className="px-6 py-4 font-medium gradient-text">SocialAgent</th>
+                  <th className="px-6 py-4 font-medium gradient-text">SocialForge</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--card-border)]">
@@ -303,11 +303,11 @@ export default function Home() {
               Ready to <span className="gradient-text">stop doing it all yourself?</span>
             </h2>
             <p className="mb-10 text-lg text-[var(--muted)]">
-              Download SocialAgent for Windows. Free, open source, no sign-up required.
+              Download SocialForge for Windows. Free, open source, no sign-up required.
               Your content. Your voice. Your growth. On autopilot.
             </p>
             <a
-              href="https://github.com/nicksimmons/socialagent/releases"
+              href="https://github.com/nicksimmons/socialforge/releases"
               className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] px-10 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -326,10 +326,10 @@ export default function Home() {
       <footer className="border-t border-[var(--card-border)] py-12 px-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row">
           <span className="text-sm text-[var(--muted)]">
-            SocialAgent — Open source AI social media growth engine
+            SocialForge — Open source AI social media growth engine
           </span>
           <div className="flex gap-6 text-sm text-[var(--muted)]">
-            <a href="https://github.com/nicksimmons/socialagent" className="hover:text-white transition-colors">
+            <a href="https://github.com/nicksimmons/socialforge" className="hover:text-white transition-colors">
               GitHub
             </a>
             <a href="#features" className="hover:text-white transition-colors">

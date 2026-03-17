@@ -1,10 +1,10 @@
-# SocialAgent Landing Page — Copilot Instructions
+# SocialForge Landing Page — Copilot Instructions
 
 ## Context
-This is the **social-agent-landing** repository — the marketing landing page for SocialAgent, an AI-powered X (Twitter) automation agent for @simo_vanov / DecodeTheTrade.
+This is the **social-forge-landing** repository — the marketing landing page for SocialForge, an AI-powered X (Twitter) automation agent for @simo_vanov / DecodeTheTrade.
 
 ## Linear Integration
-- All work tracked in the **X.SocialAgent** Linear project.
+- All work tracked in the **X.SocialForge** Linear project.
 - Reference Linear issue IDs in commit messages.
 - Check Linear project documents for feature descriptions and brand context.
 
