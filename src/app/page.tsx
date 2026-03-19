@@ -5,16 +5,16 @@ export default function Home() {
       <nav className="fixed top-0 z-50 w-full border-b border-[var(--card-border)] bg-[var(--background)]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <span className="text-xl font-bold tracking-tight">
-            Social<span className="gradient-text">Agent</span>
+            Social<span className="gradient-text">Forge</span>
           </span>
           <div className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
             <a href="#features" className="hover:text-white transition-colors">Features</a>
             <a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a>
-            <a href="#pain" className="hover:text-white transition-colors">Why</a>
-            <a href="#download" className="hover:text-white transition-colors">Download</a>
+            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           </div>
           <a
-            href="#download"
+            href="#pricing"
             className="rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-mid)] px-5 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
           >
             Get Started
@@ -22,17 +22,14 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero */}
+      {/* ════════════════════════════════════════════
+          1. HERO — Attention + Value Prop + CTA
+          ════════════════════════════════════════════ */}
       <section className="noise-overlay relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center overflow-hidden">
-        {/* Background effects */}
         <div className="absolute inset-0 -z-10">
-          {/* Large purple glow top center */}
           <div className="absolute left-1/2 top-1/4 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-600/8 blur-[150px]" />
-          {/* Cyan glow right */}
           <div className="absolute right-1/4 top-2/3 h-[400px] w-[400px] rounded-full bg-cyan-500/6 blur-[120px]" />
-          {/* Violet glow left */}
           <div className="absolute left-1/6 top-1/2 h-[350px] w-[350px] rounded-full bg-violet-500/5 blur-[100px]" />
-          {/* Subtle grid overlay with fade */}
           <div
             className="absolute inset-0 bg-[linear-gradient(to_right,#7c3aed08_1px,transparent_1px),linear-gradient(to_bottom,#7c3aed08_1px,transparent_1px)] bg-[size:48px_48px]"
             style={{ maskImage: 'radial-gradient(ellipse 60% 50% at 50% 40%, black 40%, transparent 100%)' }}
@@ -42,23 +39,22 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] bg-[var(--card)]/80 px-4 py-1.5 text-sm text-[var(--muted)] backdrop-blur-sm">
             <span className="inline-block h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-            AI-powered social media automation
+            AI-powered X/Twitter growth agent
           </div>
           <h1 className="mb-6 text-5xl font-bold leading-tight tracking-tight md:text-7xl">
             Stop burning out.<br />
             <span className="gradient-text">Start growing.</span>
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[var(--muted)] md:text-xl">
-            63% of creators burned out last year. Not because they lacked talent — because growing on social media
-            is a full-time job. SocialAgent is your AI-powered desktop agent that creates posts,
-            replies to your feed, and grows your X/Twitter audience on autopilot.
+            SocialForge is your AI desktop agent that monitors your feed, writes replies in your voice,
+            and posts content on autopilot — so you can focus on what actually matters.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="#download"
+              href="#pricing"
               className="glow inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-mid)] px-8 py-3.5 text-base font-semibold text-white transition-opacity hover:opacity-90"
             >
-              Download for Windows
+              Get SocialForge — &euro;30 Lifetime
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -70,29 +66,33 @@ export default function Home() {
               See How It Works
             </a>
           </div>
-        </div>
 
-        {/* Stats bar */}
-        <div className="relative z-10 mx-auto mt-24 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
-          {[
-            { value: "10h+", label: "saved per week" },
-            { value: "24/7", label: "autopilot mode" },
-            { value: "280", label: "char-perfect posts" },
-            { value: "\u20AC30", label: "lifetime access" },
-          ].map((stat) => (
-            <div key={stat.label} className="rounded-xl border border-[var(--card-border)] bg-[var(--card)]/60 p-4 text-center backdrop-blur-sm">
-              <div className="text-2xl font-bold gradient-text">{stat.value}</div>
-              <div className="mt-1 text-xs text-[var(--muted)]">{stat.label}</div>
-            </div>
-          ))}
+          {/* Trust bar */}
+          <div className="mx-auto mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-[var(--muted)]">
+            <span className="flex items-center gap-2">
+              <svg className="h-4 w-4 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              Runs locally on your PC
+            </span>
+            <span className="hidden sm:inline text-[var(--card-border)]">|</span>
+            <span className="flex items-center gap-2">
+              <svg className="h-4 w-4 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              Powered by Grok + Claude
+            </span>
+            <span className="hidden sm:inline text-[var(--card-border)]">|</span>
+            <span className="flex items-center gap-2">
+              <svg className="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              Zero API costs
+            </span>
+          </div>
         </div>
       </section>
 
       <div className="section-divider" />
 
-      {/* Pain Points */}
+      {/* ════════════════════════════════════════════
+          2. PROBLEM — Agitate the pain
+          ════════════════════════════════════════════ */}
       <section id="pain" className="relative py-32 px-6 bg-[var(--surface-1)] overflow-hidden">
-        {/* Background glow */}
         <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-red-500/4 blur-[150px]" />
 
         <div className="mx-auto max-w-6xl relative">
@@ -100,42 +100,42 @@ export default function Home() {
             The Problem
           </div>
           <h2 className="mb-6 text-center text-3xl font-bold md:text-5xl">
-            Social media growth is <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">broken</span>
+            Growing on X is a <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">full-time job</span>
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-center text-[var(--muted)] text-lg">
-            The algorithms changed. The rules changed. But the tools didn&apos;t.
+            You know the grind. Write posts, engage with replies, stay consistent, keep up with the algorithm — all while running your actual business.
           </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
-                title: "Content creation is a full-time job",
-                desc: "Creators spend 10+ hours per week just writing posts. That's a part-time job producing zero direct revenue.",
+                title: "10+ hours a week on content",
+                desc: "Writing posts, scheduling, replying to comments — it's a part-time job that produces zero direct revenue.",
               },
               {
                 icon: "M13 17h8m0 0V9m0 8l-8-8-4 4-6-6",
-                title: "Algorithms crush organic reach",
-                desc: "LinkedIn views dropped 47% overnight. Instagram engagement collapsed 79% in one year. Your content disappears.",
+                title: "Algorithms punish inconsistency",
+                desc: "Miss a day and your reach drops. The algorithm rewards volume and consistency, not quality alone.",
               },
               {
                 icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z",
-                title: "Engagement requires constant presence",
-                desc: "Replying drives 42% more growth, but followers expect replies within 24 hours. There aren't enough hours in the day.",
+                title: "Replies drive growth, but who has time?",
+                desc: "Engaging with others drives 42% more followers. But your audience expects replies within hours. Every day.",
               },
               {
                 icon: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
-                title: "AI tools produce generic content",
-                desc: "91% of creators use AI — but the output sounds corporate and requires hours of editing. It doesn't sound like you.",
+                title: "AI tools sound like AI tools",
+                desc: "91% of creators use AI, but the output sounds corporate and generic. It doesn't sound like you, and your audience can tell.",
               },
               {
                 icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
-                title: "Help is unaffordable",
-                desc: "Social media managers cost $1,500-6,000/month. Agencies charge even more. Most creators are stuck doing it all themselves.",
+                title: "Hiring help costs $1,500+/month",
+                desc: "Social media managers start at $1,500/month. Agencies charge even more. Most creators can't justify the cost.",
               },
               {
                 icon: "M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636",
-                title: "Most creators quit in 3-6 months",
-                desc: "Not from lack of talent — from burnout. 63% of creators experienced burnout last year. The workload is simply unsustainable.",
+                title: "63% of creators burn out",
+                desc: "Not from lack of talent — from unsustainable workload. Most quit within 3-6 months. The system is broken.",
               },
             ].map((item) => (
               <div
@@ -157,9 +157,48 @@ export default function Home() {
 
       <div className="section-divider" />
 
-      {/* Features */}
-      <section id="features" className="relative py-32 px-6 bg-[var(--surface-2)] overflow-hidden">
-        {/* Background effects */}
+      {/* ════════════════════════════════════════════
+          3. SOLUTION — Meet SocialForge
+          ════════════════════════════════════════════ */}
+      <section className="relative py-32 px-6 bg-[var(--surface-2)] overflow-hidden">
+        <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/6 blur-[150px]" />
+
+        <div className="mx-auto max-w-4xl text-center relative">
+          <div className="mb-4 text-sm font-medium uppercase tracking-widest text-[var(--accent)]">
+            The Solution
+          </div>
+          <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+            Meet <span className="gradient-text">SocialForge</span>
+          </h2>
+          <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-[var(--muted)]">
+            A Windows desktop agent that sits on your machine and does what a social media manager would — monitor your feed,
+            write replies that sound like you, create posts on schedule, and grow your audience 24/7.
+            No cloud. No API keys. No monthly bill.
+          </p>
+
+          {/* Stats bar */}
+          <div className="mx-auto grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
+            {[
+              { value: "10h+", label: "saved per week" },
+              { value: "24/7", label: "runs on autopilot" },
+              { value: "280", label: "char-perfect posts" },
+              { value: "\u20AC0/mo", label: "zero running costs" },
+            ].map((stat) => (
+              <div key={stat.label} className="rounded-xl border border-[var(--card-border)] bg-[var(--card)]/60 p-4 text-center backdrop-blur-sm">
+                <div className="text-2xl font-bold gradient-text">{stat.value}</div>
+                <div className="mt-1 text-xs text-[var(--muted)]">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ════════════════════════════════════════════
+          4. FEATURES — Detailed capabilities
+          ════════════════════════════════════════════ */}
+      <section id="features" className="relative py-32 px-6 bg-[var(--surface-1)] overflow-hidden">
         <div className="absolute left-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-violet-600/5 blur-[150px]" />
         <div className="absolute right-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full bg-cyan-500/4 blur-[120px]" />
 
@@ -168,54 +207,54 @@ export default function Home() {
             Features
           </div>
           <h2 className="mb-6 text-center text-3xl font-bold md:text-5xl">
-            Your personal <span className="gradient-text">growth engine</span>
+            Two AI engines. <span className="gradient-text">Your voice.</span>
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-center text-[var(--muted)] text-lg">
-            SocialAgent runs on your desktop, uses your browser session, and speaks in your voice.
-            No API keys. No monthly fees. No generic AI slop.
+            SocialForge combines Grok&apos;s real-time X knowledge with Claude&apos;s writing quality —
+            and learns from every edit you make to sound more like you over time.
           </p>
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                icon: "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z",
-                title: "Custom Prompts Per Content Type",
-                desc: "Write a different prompt for educational posts, engagement tweets, tips, and threads. Each content type gets its own voice and angle. Full control, zero templates.",
-                badge: "AI Prompts",
-                color: "violet",
-              },
-              {
-                icon: "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z",
-                title: "Intelligent Reply Agent",
-                desc: "Scrapes your feed, triages posts by relevance, and generates authentic replies that add value. Learns your reply style from previous responses to stay consistent.",
-                badge: "Feed Monitor",
+                icon: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+                title: "Grok-Powered Feed Intelligence",
+                desc: "SocialForge drives Grok's free web interface via your browser session — zero API costs. Grok triages your feed, scores post relevance, and decides what's worth replying to with full X context awareness.",
+                badge: "Grok Integration",
                 color: "cyan",
               },
               {
-                icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
-                title: "Content Calendar & Scheduling",
-                desc: "Plan your week with themes and topics. The agent auto-generates and posts content at optimal times. Visual calendar view with full editorial control.",
-                badge: "Scheduler",
-                color: "blue",
+                icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
+                title: "Claude Code CLI for Smarter Writing",
+                desc: "Connect Claude Code as an external text generator via MCP. Claude polls for pending replies and posts, generates higher-quality text using its reasoning capabilities, and submits it back — all through the CLI you already use.",
+                badge: "Claude Code",
+                color: "violet",
               },
               {
                 icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
-                title: "Your Voice, Not AI Slop",
-                desc: "Feeds your recent posts and replies into every prompt so the AI matches your style. Same tone, same vocabulary, different content every time.",
-                badge: "Voice Match",
+                title: "Learns Your Voice From Every Edit",
+                desc: "Every time you edit, approve, or reject a generated post, the system learns. Your recent posts and replies feed into every prompt — same tone, same vocabulary, increasingly accurate to how you actually write.",
+                badge: "Personalization",
                 color: "emerald",
               },
               {
-                icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
-                title: "Desktop-Native, Privacy-First",
-                desc: "Runs as a Windows desktop app using your own browser session. Your data stays on your machine. No cloud servers, no subscriptions, no data harvesting.",
-                badge: "Desktop",
+                icon: "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z",
+                title: "Autonomous Reply Agent",
+                desc: "Scrapes your Following feed every 5 minutes. Triages posts by relevance. Generates authentic, context-aware replies that add value — not generic comments. Human-like timing and typing built in.",
+                badge: "Feed Monitor",
+                color: "blue",
+              },
+              {
+                icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
+                title: "Content Calendar with Weekly Themes",
+                desc: "Plan your week with rotating themes and topics. The agent auto-generates posts at optimal times matching your content strategy. Visual calendar with full editorial control — approve or let it fly.",
+                badge: "Scheduler",
                 color: "purple",
               },
               {
                 icon: "M13 10V3L4 14h7v7l9-11h-7z",
-                title: "Real-Time Dashboard",
-                desc: "Live activity feed, post history, engagement metrics, and agent controls. See exactly what your agent is doing, approve posts before they go live, or let it run fully autonomous.",
-                badge: "Control",
+                title: "Real-Time System Access",
+                desc: "Give Claude Code access to your system information, recent posts, and engagement data. Get content that references real, up-to-date information — not generic AI filler disconnected from reality.",
+                badge: "Live Context",
                 color: "amber",
               },
             ].map((feature) => {
@@ -254,9 +293,10 @@ export default function Home() {
 
       <div className="section-divider" />
 
-      {/* How It Works */}
-      <section id="how-it-works" className="relative py-32 px-6 bg-[var(--surface-1)] overflow-hidden">
-        {/* Background grid */}
+      {/* ════════════════════════════════════════════
+          5. HOW IT WORKS — 3 steps
+          ════════════════════════════════════════════ */}
+      <section id="how-it-works" className="relative py-32 px-6 bg-[var(--surface-2)] overflow-hidden">
         <div
           className="absolute inset-0 bg-[radial-gradient(circle,#7c3aed06_1px,transparent_1px)] bg-[size:32px_32px]"
           style={{ maskImage: 'radial-gradient(ellipse 50% 50% at 50% 50%, black 40%, transparent 100%)' }}
@@ -273,18 +313,18 @@ export default function Home() {
             {[
               {
                 step: "01",
-                title: "Install & authenticate",
-                desc: "Download the desktop app, open it, and log in to X.com through the built-in browser. SocialAgent uses your existing session — no API keys or tokens needed.",
+                title: "Install & log in to X",
+                desc: "Download SocialForge for Windows. Open it, log in to X.com through the built-in browser. It uses your existing session — no API keys, no tokens, no configuration headaches.",
               },
               {
                 step: "02",
-                title: "Configure your prompts & strategy",
-                desc: "Set up your content types (educational, tips, threads, engagement). Write a custom AI prompt for each type that defines your voice. Set daily targets and schedule your content calendar.",
+                title: "Set your voice & strategy",
+                desc: "Write custom prompts for each content type — educational posts, engagement tweets, threads. Define your weekly themes, daily targets, and content calendar. Optionally connect Claude Code for higher-quality generation.",
               },
               {
                 step: "03",
-                title: "Let the agent work",
-                desc: "SocialAgent monitors your feed, triages relevant posts, generates on-brand replies, and publishes your scheduled content. Watch it all happen in real-time from the dashboard, or just let it run.",
+                title: "Let the agent run",
+                desc: "SocialForge monitors your feed, triages relevant posts via Grok, generates on-brand replies, and publishes your scheduled content. Watch it from the dashboard, approve posts before they go live, or let it run fully autonomous.",
               },
             ].map((step, i) => (
               <div key={step.step} className="flex gap-6 items-start">
@@ -303,13 +343,28 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Mid-page CTA */}
+          <div className="mt-16 text-center">
+            <a
+              href="#pricing"
+              className="glow inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-mid)] px-8 py-3.5 text-base font-semibold text-white transition-opacity hover:opacity-90"
+            >
+              Get SocialForge — &euro;30 Lifetime
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
       <div className="section-divider" />
 
-      {/* Comparison */}
-      <section className="relative py-32 px-6 bg-[var(--surface-2)] overflow-hidden">
+      {/* ════════════════════════════════════════════
+          6. COMPARISON — Why not alternatives
+          ════════════════════════════════════════════ */}
+      <section className="relative py-32 px-6 bg-[var(--surface-1)] overflow-hidden">
         <div className="absolute left-0 bottom-0 h-[400px] w-[400px] rounded-full bg-violet-600/4 blur-[120px]" />
 
         <div className="mx-auto max-w-4xl relative">
@@ -325,17 +380,18 @@ export default function Home() {
                 <tr className="border-b border-[var(--card-border)] bg-[var(--card)]">
                   <th className="px-6 py-4 font-medium text-[var(--muted)]">Feature</th>
                   <th className="px-6 py-4 font-medium text-[var(--muted)]">Scheduling Tools</th>
-                  <th className="px-6 py-4 font-medium gradient-text">SocialAgent</th>
+                  <th className="px-6 py-4 font-medium gradient-text">SocialForge</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--card-border)]">
                 {[
-                  ["Generates content for you", "Generic AI output", "Custom prompts per content type"],
+                  ["Generates content", "Generic AI templates", "Custom prompts per content type"],
+                  ["AI quality", "Single model, no context", "Grok triage + Claude writing"],
                   ["Learns your voice", "No", "Feeds recent posts into every prompt"],
                   ["Auto-replies to feed", "No", "Triages & replies autonomously"],
-                  ["Content strategy planning", "Basic calendar", "Weekly themes + auto-slot generation"],
-                  ["Privacy", "Cloud-based, data stored remotely", "Local desktop app, your data stays yours"],
-                  ["Price", "$15-249+/month", "\u20AC30 one-time, lifetime access"],
+                  ["Gets smarter over time", "No", "Learns from your edits & rejections"],
+                  ["Privacy", "Cloud-based, your data on their servers", "Desktop app, data stays on your machine"],
+                  ["Price", "$15\u2013249/month ($180\u2013$2,988/year)", "\u20AC30 once, yours forever"],
                 ].map(([feature, others, us]) => (
                   <tr key={feature} className="bg-[var(--background)] hover:bg-[var(--surface-1)] transition-colors">
                     <td className="px-6 py-4 font-medium">{feature}</td>
@@ -351,37 +407,162 @@ export default function Home() {
 
       <div className="section-divider" />
 
-      {/* Download CTA */}
-      <section id="download" className="relative py-32 px-6 overflow-hidden">
-        {/* Background glow */}
+      {/* ════════════════════════════════════════════
+          7. PRICING — with anchor
+          ════════════════════════════════════════════ */}
+      <section id="pricing" className="relative py-32 px-6 bg-[var(--surface-2)] overflow-hidden">
         <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/6 blur-[150px]" />
 
         <div className="mx-auto max-w-3xl text-center relative">
-          <div className="glow-strong rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-12 md:p-16 relative overflow-hidden">
-            {/* Inner gradient accent */}
+          <div className="mb-4 text-sm font-medium uppercase tracking-widest text-[var(--accent)]">
+            Pricing
+          </div>
+          <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+            One price. <span className="gradient-text">Yours forever.</span>
+          </h2>
+          <p className="mx-auto mb-12 max-w-xl text-lg text-[var(--muted)]">
+            No subscriptions. No usage limits. No API fees.
+            Pay once, get lifetime access and all future updates.
+          </p>
+
+          <div className="glow-strong rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-10 md:p-14 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 via-transparent to-cyan-500/5" />
             <div className="relative">
-              <h2 className="mb-4 text-3xl font-bold md:text-5xl">
-                Ready to <span className="gradient-text">stop doing it all yourself?</span>
-              </h2>
-              <p className="mb-10 text-lg text-[var(--muted)]">
-                Download SocialAgent for Windows. One-time purchase, lifetime updates.
-                Your content. Your voice. Your growth. On autopilot.
+              {/* Price anchor */}
+              <p className="mb-2 text-sm text-[var(--muted)]">
+                Other tools charge <span className="line-through text-red-400/80">$15&ndash;249/month</span>
               </p>
+              <div className="mb-2 flex items-baseline justify-center gap-2">
+                <span className="text-6xl font-bold gradient-text md:text-7xl">&euro;30</span>
+              </div>
+              <p className="mb-8 text-[var(--muted)]">One-time payment &middot; Lifetime access &middot; All future updates</p>
+
+              <div className="mb-8 mx-auto max-w-sm text-left space-y-3">
+                {[
+                  "Grok-powered feed monitoring & replies",
+                  "Claude Code integration for smarter writing",
+                  "Content calendar with weekly themes",
+                  "Learns your voice from every edit",
+                  "Real-time dashboard & controls",
+                  "Anti-detection with human-like behavior",
+                  "All future updates included",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3 text-sm">
+                    <svg className="h-4 w-4 flex-shrink-0 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-zinc-300">{item}</span>
+                  </div>
+                ))}
+              </div>
+
               <a
                 href="#download"
                 className="glow inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--gradient-start)] via-[var(--gradient-mid)] to-[var(--gradient-end)] px-10 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90"
               >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Get SocialAgent — &euro;30 Lifetime
+                Get SocialForge Now
               </a>
               <p className="mt-6 text-sm text-[var(--muted)]">
-                Windows 10/11 required. macOS & Linux coming soon.
+                Windows 10/11 required. macOS &amp; Linux coming soon.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ════════════════════════════════════════════
+          8. GUARANTEE — Risk reversal
+          ════════════════════════════════════════════ */}
+      <section className="py-20 px-6 bg-[var(--surface-1)]">
+        <div className="mx-auto max-w-2xl text-center">
+          <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 mb-6">
+            <svg className="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 className="mb-3 text-2xl font-bold">30-Day Money-Back Guarantee</h3>
+          <p className="text-[var(--muted)] leading-relaxed">
+            Try SocialForge for 30 days. If it doesn&apos;t save you time or you&apos;re not happy for any reason,
+            email us and get a full refund. No questions asked.
+          </p>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ════════════════════════════════════════════
+          9. FAQ — Objection handling
+          ════════════════════════════════════════════ */}
+      <section id="faq" className="py-32 px-6 bg-[var(--surface-2)]">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-4 text-center text-sm font-medium uppercase tracking-widest text-[var(--accent)]">
+            FAQ
+          </div>
+          <h2 className="mb-16 text-center text-3xl font-bold md:text-5xl">
+            Common <span className="gradient-text">questions</span>
+          </h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: "Is \u20AC30 really a one-time payment?",
+                a: "Yes. You pay once and get lifetime access, including all future updates. No subscriptions, no hidden fees, no usage caps. We charge \u20AC30 instead of a monthly fee because we believe in building tools that respect your wallet.",
+              },
+              {
+                q: "How does the Grok integration work without API costs?",
+                a: "SocialForge uses Playwright to drive Grok's free web interface through your own X Premium session — the same Grok you already have access to. No API keys needed, no per-token charges. Grok handles feed triage and initial content generation at zero cost.",
+              },
+              {
+                q: "What does the Claude Code integration add?",
+                a: "When connected, Claude Code acts as an advanced text generator via MCP (Model Context Protocol). It polls for pending replies and posts, generates higher-quality text using Claude's reasoning capabilities, and learns from your edits and rejections to sound more like you over time. It can also access your system information for contextually rich, up-to-date content.",
+              },
+              {
+                q: "Will my account get flagged or banned?",
+                a: "SocialForge is built with anti-detection as a core principle. It uses human-like typing speeds (30-120ms per character), randomized delays between actions (2-5 minutes), jitter on cycle intervals, and character-by-character input. It behaves like a human using X, because it operates through a real browser session.",
+              },
+              {
+                q: "Will it keep getting updates?",
+                a: "Yes. Your \u20AC30 includes all future updates. SocialForge is actively developed and we're committed to keeping it current with X platform changes, new AI model integrations, and feature improvements. macOS and Linux support are on the roadmap.",
+              },
+            ].map((faq) => (
+              <div key={faq.q} className="rounded-xl border border-[var(--card-border)] bg-[var(--card)] p-6">
+                <h3 className="mb-3 text-lg font-semibold">{faq.q}</h3>
+                <p className="text-sm leading-relaxed text-[var(--muted)]">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ════════════════════════════════════════════
+          10. FINAL CTA
+          ════════════════════════════════════════════ */}
+      <section id="download" className="relative py-32 px-6 overflow-hidden">
+        <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/6 blur-[150px]" />
+
+        <div className="mx-auto max-w-3xl text-center relative">
+          <h2 className="mb-4 text-3xl font-bold md:text-5xl">
+            Stop doing it all yourself.<br />
+            <span className="gradient-text">Let your agent take over.</span>
+          </h2>
+          <p className="mb-10 text-lg text-[var(--muted)]">
+            One-time &euro;30 purchase. Lifetime updates. 30-day money-back guarantee.
+          </p>
+          <a
+            href="#"
+            className="glow inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--gradient-start)] via-[var(--gradient-mid)] to-[var(--gradient-end)] px-10 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90"
+          >
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Get SocialForge — &euro;30 Lifetime
+          </a>
         </div>
       </section>
 
@@ -389,7 +570,7 @@ export default function Home() {
       <footer className="border-t border-[var(--card-border)] bg-[var(--surface-1)] py-12 px-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row">
           <span className="text-sm text-[var(--muted)]">
-            SocialAgent — AI-powered social media growth engine
+            SocialForge — AI-powered X/Twitter growth agent
           </span>
           <div className="flex gap-6 text-sm text-[var(--muted)]">
             <a href="#features" className="hover:text-white transition-colors">
@@ -398,8 +579,11 @@ export default function Home() {
             <a href="#how-it-works" className="hover:text-white transition-colors">
               How It Works
             </a>
-            <a href="#download" className="hover:text-white transition-colors">
-              Download
+            <a href="#pricing" className="hover:text-white transition-colors">
+              Pricing
+            </a>
+            <a href="#faq" className="hover:text-white transition-colors">
+              FAQ
             </a>
           </div>
         </div>
