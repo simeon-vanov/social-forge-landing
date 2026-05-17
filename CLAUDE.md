@@ -69,3 +69,28 @@ social-forge-landing/
 - Use `@/*` import alias for src directory
 - Components in PascalCase, utilities in camelCase
 - Prefer server components, use `"use client"` only when needed
+
+## Documentation
+
+This repo follows the cross-project AI-management docs convention. The canonical spec lives at `../../ProjectTemplate/docs/specs/2026-05-10-ai-management-pattern-design.md`.
+
+Reading order on entering this repo:
+
+1. `CLAUDE.md` (this file) — long-lived project facts.
+2. `docs/README.md` — one-page index of reference areas and active work.
+3. `docs/in-flight/` — every feature currently being worked on; freshest truth.
+4. `docs/reference/<area>.md` — current system behaviour, by area.
+5. `docs/ARCHITECTURE-CHANGES.md` — recent flux.
+6. Active `docs/specs/` + `docs/plans/`.
+7. Shipped `docs/specs/` only when investigating *why* a past decision was made.
+8. `docs/decisions/` — ADRs.
+
+Reference docs currently maintained:
+
+- `docs/reference/architecture.md` — Next.js 15 App Router layout, build pipeline, hosting topology.
+- `docs/reference/pages-and-routes.md` — the single `/` landing page and its 10 in-page sections.
+- `docs/reference/social-forge-app-integration.md` — how the landing links to the desktop app; product-doc source of truth (`../social-forge-app/Docs/`).
+- `docs/reference/deployment.md` — multi-stage `Dockerfile` + `next.config.ts` standalone output + CI.
+- `docs/reference/seo.md` — `metadata` export, favicon/icon conventions, current gaps.
+
+New specs / plans / ideas / ADRs follow the templates in `docs/_templates/`. Every `*.md` under `docs/` MUST carry valid front-matter.
